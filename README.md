@@ -21,3 +21,14 @@ Files:
 
 If you would rather not host anything, use the Android Studio project instead
 (nakatha-android.zip), which installs as a real APK with no network involved.
+
+
+## Important
+
+Upload these five files exactly as they are. Do not rename the game's standalone
+`nakatha.html` to `index.html` and use that instead: the copy in this folder has the
+manifest link and the service worker registration added, and without those Chrome offers
+only "Create shortcut" rather than "Install app".
+
+When a new build arrives, replace `index.html` from the new zip and change the cache name
+near the top of `sw.js` to something new, then reload the page twice on the phone.
