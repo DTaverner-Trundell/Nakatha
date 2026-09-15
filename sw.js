@@ -1,5 +1,5 @@
 /* Nakatha service worker: cache everything once, then never touch the network. */
-const CACHE = "nakatha-1.0";
+const CACHE = "nakatha-1.2";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", e => {
